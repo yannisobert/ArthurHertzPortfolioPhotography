@@ -15,7 +15,7 @@ class AppFixtures extends Fixture
         for ($i = 1; $i < 5; $i++) {
             $photoCategory = new PhotoCategory();
 
-            $photoCategory->setName('test' . $i);
+            $photoCategory->setName('categoryTest' . $i);
 
             $manager->persist($photoCategory);
 
