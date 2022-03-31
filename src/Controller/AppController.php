@@ -41,4 +41,12 @@ class AppController extends AbstractController
             'photos' => $photographyRepository->find($idphoto),
         ]);
     }
+
+    #[Route('/contact', name: 'contact')]
+    public function contact(): Response
+    {
+        return $this->render('app/contact.html.twig', [
+            'controller_name' => 'AppController',
+        ]);
+    }
 }
